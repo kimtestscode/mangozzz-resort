@@ -49,6 +49,20 @@
   --radius-xl:  32px;
   --radius-full: 9999px;
 
+  /* Semantic Aliases */
+  --color-bg:            var(--cream);
+  --color-surface:       var(--white);
+  --color-surface-2:     var(--gray-50);
+  --color-border:        var(--gray-200);
+  --color-text:          var(--gray-800);
+  --color-text-muted:    var(--gray-600);
+  --color-primary:       var(--green-mid);
+  --color-primary-light: var(--green-light);
+  --color-primary-dark:  var(--green-dark);
+  --color-accent:        var(--gold);
+  --color-accent-light:  var(--gold-light);
+  --nav-height:          76px;
+
   /* Transitions */
   --ease:       cubic-bezier(.4,0,.2,1);
   --transition: 300ms var(--ease);

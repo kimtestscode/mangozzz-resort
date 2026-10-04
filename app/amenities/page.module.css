@@ -52,4 +52,12 @@
 
 .check { color: var(--green-light); font-weight: 700; }
 
-@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .hero { padding-block: 7rem 3.5rem; }
+  .grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding-block: 5.5rem 2.5rem; }
+  .body { padding: 1.25rem; }
+}

@@ -51,7 +51,14 @@
 
 .desc { font-size: 1rem; color: var(--gray-600); line-height: 1.75; }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .hero { padding-block: 7rem 3.5rem; }
+  .grid { gap: 2.5rem; }
   .card, .card.reverse { grid-template-columns: 1fr; direction: ltr; }
   .imgWrap { aspect-ratio: 16/9; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding-block: 5.5rem 2.5rem; }
+  .title { font-size: 1.5rem; }
 }

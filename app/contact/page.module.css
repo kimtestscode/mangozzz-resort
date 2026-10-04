@@ -189,7 +189,14 @@
 /* Map */
 .mapSection { line-height: 0; }
 
-@media (max-width: 768px) {
-  .layout { grid-template-columns: 1fr; }
-  .row    { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .hero { padding-block: 7rem 3.5rem; }
+  .layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .formWrap { padding: 2rem 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding-block: 5.5rem 2.5rem; }
+  .row { grid-template-columns: 1fr; }
+  .formWrap { padding: 1.5rem 1rem; }
 }

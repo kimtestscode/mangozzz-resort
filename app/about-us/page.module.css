@@ -23,8 +23,14 @@
 .whyCard p { font-size: .88rem; color: var(--gray-600); line-height: 1.6; }
 
 @media (max-width: 900px) {
-  .storyLayout { grid-template-columns: 1fr; }
-  .storyImages { display: none; }
+  .hero { padding-block: 7rem 3.5rem; }
+  .storyLayout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .storyImages { position: static; margin-top: 1.5rem; }
+  .imgSecondary { display: none; }
   .whyGrid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 500px) { .whyGrid { grid-template-columns: 1fr; } }
+
+@media (max-width: 600px) {
+  .hero { padding-block: 5.5rem 2.5rem; }
+  .whyGrid { grid-template-columns: 1fr; }
+}

@@ -35,8 +35,15 @@
 
 .gameCard p { font-size: .85rem; color: var(--gray-600); line-height: 1.6; }
 
-@media (max-width: 900px) { .gamesGrid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 500px) { .gamesGrid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .hero { padding-block: 7rem 3.5rem; }
+  .gamesGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .hero { padding-block: 5.5rem 2.5rem; }
+  .gamesGrid { grid-template-columns: 1fr; }
+}
 
 .photoGrid {
   display: grid;

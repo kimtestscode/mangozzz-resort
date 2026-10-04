@@ -269,6 +269,18 @@
   text-transform: uppercase; letter-spacing: .06em; }
 
 @media (max-width: 900px) {
-  .layout { grid-template-columns: 1fr; }
-  .sidebar { display: none; }
+  .layout { grid-template-columns: 1fr; gap: 2rem; }
+  .formWrap { padding: 1.75rem 1.25rem; }
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header { padding-block: 6rem 3rem; }
+  .row { grid-template-columns: 1fr; }
+  .sidebar { grid-template-columns: 1fr; }
+  .formWrap { padding: 1.5rem 1rem; }
 }
