@@ -50,11 +50,37 @@ export default function ContactPage() {
         console.warn('Email notification notice:', emailErr);
       }
 
+      // 3. Formulate WhatsApp message and auto-open
+      const waMessage =
+        `*New Contact Message — Mangozzz Magical World Resort*\n\n` +
+        `👤 *Name:* ${form.name}\n` +
+        `📞 *Phone:* ${form.phone || 'Not provided'}\n` +
+        `✉️ *Email:* ${form.email}\n` +
+        `💬 *Message:* ${form.message}\n\n` +
+        `Please respond to my query.`;
+
+      const waUrl = `https://wa.me/917977127312?text=${encodeURIComponent(waMessage)}`;
+
+      if (typeof window !== 'undefined') {
+        window.open(waUrl, '_blank');
+      }
+
       setStatus('success');
     } catch (err) {
-      setErrorMsg('Failed to send. Please email us directly at mangozzzmagicalworld@gmail.com');
+      setErrorMsg('Failed to send. Please call or WhatsApp us directly at +91 79771 27312');
       setStatus('error');
     }
+  };
+
+  const getWhatsAppUrl = () => {
+    const waMessage =
+      `*New Contact Message — Mangozzz Magical World Resort*\n\n` +
+      `👤 *Name:* ${form.name || 'Guest'}\n` +
+      `📞 *Phone:* ${form.phone || 'Not provided'}\n` +
+      `✉️ *Email:* ${form.email || 'N/A'}\n` +
+      `💬 *Message:* ${form.message || 'General Inquiry'}\n\n` +
+      `Please respond to my query.`;
+    return `https://wa.me/917977127312?text=${encodeURIComponent(waMessage)}`;
   };
 
   return (
@@ -136,9 +162,33 @@ export default function ContactPage() {
               <div className={styles.formWrap}>
                 {status === 'success' ? (
                   <div className={styles.successCard}>
-                    <span className={styles.successIcon}>✅</span>
+                    <span className={styles.successIcon}>🎉</span>
                     <h3>Message Sent!</h3>
-                    <p>Thank you, <strong>{form.name}</strong>! We'll get back to you shortly.</p>
+                    <p>
+                      Thank you, <strong>{form.name}</strong>! Redirecting you to WhatsApp for a quick response from our team.
+                    </p>
+                    <a
+                      href={getWhatsAppUrl()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                      style={{
+                        background: '#25d366',
+                        borderColor: '#25d366',
+                        color: '#fff',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        margin: '1.25rem 0',
+                        fontWeight: 700,
+                        boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+                      }}
+                    >
+                      💬 Open WhatsApp Chat Now
+                    </a>
+                    <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                      Or call us directly at <a href="tel:+917977127312" style={{ color: 'var(--gold)' }}>+91 79771 27312</a>
+                    </p>
                   </div>
                 ) : (
                   <form className={styles.form} onSubmit={handleSubmit}>

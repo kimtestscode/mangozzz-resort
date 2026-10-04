@@ -83,17 +83,46 @@ export default function WeddingInquiryForm() {
         console.warn('Email notification notice:', emailErr);
       }
 
+      // 3. Formulate WhatsApp message and auto-open
+      const waText = 
+        `*New Wedding & Event Inquiry — Mangozzz Magical World Resort*\n\n` +
+        `👤 *Name:* ${form.name}\n` +
+        `📞 *Phone:* ${form.phone}\n` +
+        `✉️ *Email:* ${form.email}\n` +
+        `💍 *Event Type:* ${form.eventType}\n` +
+        `🏛️ *Preferred Setup:* ${form.venue}\n` +
+        `👥 *Guests (Pax):* ${form.guestCount}\n` +
+        `📅 *Tentative Date:* ${form.eventDate || 'Flexible'}\n` +
+        `📝 *Special Requirements:* ${form.message || 'None'}\n\n` +
+        `Please share venue availability and customized wedding packages.`;
+      
+      const waUrl = `https://wa.me/917977127312?text=${encodeURIComponent(waText)}`;
+      
+      if (typeof window !== 'undefined') {
+        window.open(waUrl, '_blank');
+      }
+
       setStatus('success');
     } catch (err) {
       console.error('Inquiry error:', err);
-      // Fallback gracefully
       setStatus('success');
     }
   };
 
-  const whatsappMessage = encodeURIComponent(
-    `Hello Mangozzz Magical World Resort team! I want to inquire about hosting an event:\n\n• Name: ${form.name || 'Guest'}\n• Event Type: ${form.eventType}\n• Preferred Venue: ${form.venue}\n• Expected Guests: ${form.guestCount}\n• Date: ${form.eventDate || 'Flexible'}\n\nPlease share venue availability and wedding packages.`
-  );
+  const getWhatsAppUrl = () => {
+    const waText = 
+      `*New Wedding & Event Inquiry — Mangozzz Magical World Resort*\n\n` +
+      `👤 *Name:* ${form.name || 'Guest'}\n` +
+      `📞 *Phone:* ${form.phone || 'N/A'}\n` +
+      `✉️ *Email:* ${form.email || 'N/A'}\n` +
+      `💍 *Event Type:* ${form.eventType}\n` +
+      `🏛️ *Preferred Setup:* ${form.venue}\n` +
+      `👥 *Guests (Pax):* ${form.guestCount}\n` +
+      `📅 *Tentative Date:* ${form.eventDate || 'Flexible'}\n` +
+      `📝 *Special Requirements:* ${form.message || 'None'}\n\n` +
+      `Please share venue availability and customized wedding packages.`;
+    return `https://wa.me/917977127312?text=${encodeURIComponent(waText)}`;
+  };
 
   return (
     <div className={styles.formCard} id="inquiry-form">
@@ -102,16 +131,16 @@ export default function WeddingInquiryForm() {
       {status === 'success' ? (
         <div>
           <div className={styles.successNotice}>
-            🎉 Thank you! Your wedding inquiry has been received. Our event coordinator will call you within 12 hours.
+            🎉 Thank you! Your wedding inquiry has been recorded. Redirecting you to WhatsApp for instant quote &amp; date confirmation!
           </div>
           <a
-            href={`https://wa.me/917977127312?text=${whatsappMessage}`}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className={`btn ${styles.whatsappBtn}`}
             style={{ display: 'block', textAlign: 'center', marginTop: '1rem' }}
           >
-            💬 Connect on WhatsApp for Instant Quote
+            💬 Open WhatsApp Chat Now
           </a>
         </div>
       ) : (

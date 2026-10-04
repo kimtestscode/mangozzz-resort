@@ -1,4 +1,5 @@
 import './globals.css';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp/FloatingWhatsApp';
 
 export const metadata = {
   title: {
@@ -35,7 +36,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingWhatsApp />
+      </body>
     </html>
   );
 }
+

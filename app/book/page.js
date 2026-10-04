@@ -86,6 +86,27 @@ function BookingForm() {
         console.warn('Email notification notice:', emailErr);
       }
 
+      // 3. Formulate WhatsApp message and redirect
+      const roomLabel = roomTypes.find(r => r.id === form.roomType)?.label || form.roomType || 'Cottage / Villa';
+      const waMessage = 
+        `*New Booking Request — Mangozzz Magical World Resort*\n\n` +
+        `👤 *Name:* ${form.name}\n` +
+        `📞 *Phone:* ${form.phone}\n` +
+        `✉️ *Email:* ${form.email}\n` +
+        `🏡 *Room Type:* ${roomLabel}\n` +
+        `📅 *Check-In:* ${form.checkin}\n` +
+        `📅 *Check-Out:* ${form.checkout}\n` +
+        `👥 *Guests:* ${form.adults} Adults, ${form.children} Children (${form.rooms} Room(s))\n` +
+        `📝 *Special Requests:* ${form.requests || 'None'}\n\n` +
+        `Please confirm availability and booking details.`;
+      
+      const waUrl = `https://wa.me/917977127312?text=${encodeURIComponent(waMessage)}`;
+      
+      // Auto open WhatsApp chat
+      if (typeof window !== 'undefined') {
+        window.open(waUrl, '_blank');
+      }
+
       setStatus('success');
     } catch (err) {
       console.error('Booking submission error:', err);
@@ -94,22 +115,59 @@ function BookingForm() {
     }
   };
 
+  const getWhatsAppUrl = () => {
+    const roomLabel = roomTypes.find(r => r.id === form.roomType)?.label || form.roomType || 'Cottage / Villa';
+    const waMessage = 
+      `*New Booking Request — Mangozzz Magical World Resort*\n\n` +
+      `👤 *Name:* ${form.name}\n` +
+      `📞 *Phone:* ${form.phone}\n` +
+      `✉️ *Email:* ${form.email}\n` +
+      `🏡 *Room Type:* ${roomLabel}\n` +
+      `📅 *Check-In:* ${form.checkin}\n` +
+      `📅 *Check-Out:* ${form.checkout}\n` +
+      `👥 *Guests:* ${form.adults} Adults, ${form.children} Children (${form.rooms} Room(s))\n` +
+      `📝 *Special Requests:* ${form.requests || 'None'}\n\n` +
+      `Please confirm availability and booking details.`;
+    return `https://wa.me/917977127312?text=${encodeURIComponent(waMessage)}`;
+  };
+
   if (status === 'success') {
     return (
       <div className={styles.successCard}>
         <div className={styles.successIcon}>🎉</div>
         <h2>Booking Request Sent!</h2>
         <p>
-          Thank you, <strong>{form.name}</strong>! We have received your booking request and
-          will confirm your reservation within 24 hours via email or phone.
+          Thank you, <strong>{form.name}</strong>! Your booking details have been sent.
+          Redirecting to WhatsApp for instant confirmation.
         </p>
+
+        <a
+          href={getWhatsAppUrl()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg"
+          style={{
+            background: '#25d366',
+            borderColor: '#25d366',
+            color: '#fff',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            margin: '1.25rem 0',
+            fontWeight: 700,
+            boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+          }}
+        >
+          💬 Open WhatsApp Chat Now
+        </a>
+
         <div className={styles.bookingDetails}>
           <div><strong>Check-in:</strong> {form.checkin}</div>
           <div><strong>Check-out:</strong> {form.checkout}</div>
           <div><strong>Guests:</strong> {form.adults} Adults, {form.children} Children</div>
         </div>
         <p className={styles.callNote}>
-          For immediate confirmation, call us at{' '}
+          Need urgent help? Call us directly at{' '}
           <a href="tel:+917977127312">+91 79771 27312</a>
         </p>
       </div>
