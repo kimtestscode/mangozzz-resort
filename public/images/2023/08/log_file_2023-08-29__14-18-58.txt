@@ -1,0 +1,59 @@
+
+---Downloaded files---
+The import files for: Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://mangozzz.com
+Data file = /home3/mangozzz/public_html/wp-content/themes/hotelft/install-resource/demo-import/demo-content.xml
+Widget file = /home3/mangozzz/public_html/wp-content/themes/hotelft/install-resource/demo-import/widgets.wie
+Customizer file = /home3/mangozzz/public_html/wp-content/themes/hotelft/install-resource/demo-import/customize.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import brw_branch Hotel FT. London
+[WARNING] Failed to import brw_branch Hotel FT. Manchester
+[WARNING] Failed to import brw_branch Hotel FT. New York
+[WARNING] Failed to import brw_branch Hotel FT. Paris
+
+
+------
+New AJAX call!
+[WARNING] Failed to import brw_branch Hotel FT. London
+[WARNING] Failed to import brw_branch Hotel FT. Manchester
+[WARNING] Failed to import brw_branch Hotel FT. New York
+[WARNING] Failed to import brw_branch Hotel FT. Paris
+
+
+------
+New AJAX call!
+[WARNING] Failed to import brw_branch Hotel FT. London
+[WARNING] Failed to import brw_branch Hotel FT. Manchester
+[WARNING] Failed to import brw_branch Hotel FT. New York
+[WARNING] Failed to import brw_branch Hotel FT. Paris
+
+
+------
+New AJAX call!
+[WARNING] Failed to import brw_branch Hotel FT. London
+[WARNING] Failed to import brw_branch Hotel FT. Manchester
+[WARNING] Failed to import brw_branch Hotel FT. New York
+[WARNING] Failed to import brw_branch Hotel FT. Paris
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Search - Search - Imported
+Categories - Category - Imported
+Archives - Archives - Imported
+Tag Cloud - Tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

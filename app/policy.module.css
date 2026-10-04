@@ -1,0 +1,71 @@
+/* Shared policy page styles */
+.main { padding-top: 0; }
+
+.hero {
+  background: linear-gradient(135deg, var(--green-dark), #0d2219);
+  padding-block: 8rem 4rem;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,.55);
+  font-size: .9rem;
+}
+
+.content {
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.content h2 {
+  font-size: 1.3rem;
+  color: var(--green-dark);
+  margin-top: 2.5rem;
+  margin-bottom: .75rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.content h3 {
+  font-size: 1.05rem;
+  color: var(--green-mid);
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.content p {
+  font-size: .95rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: .75rem;
+}
+
+.content ul {
+  list-style: disc;
+  padding-inline-start: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.content li {
+  font-size: .95rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: .25rem;
+}
+
+.content a {
+  color: var(--green-mid);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content a:hover { color: var(--green-dark); }
+
+.content strong { color: var(--gray-800); }

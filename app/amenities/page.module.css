@@ -1,0 +1,55 @@
+.hero { position: relative; padding-block: 10rem 5rem; color: var(--white); overflow: hidden; }
+.heroBg { position: absolute; inset: 0; background-image: url('/client-media/reduced/General Photos/Resort night.jpg'); background-size: cover; background-position: center; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(26,58,42,.88), rgba(0,0,0,.65)); }
+.heroContent { position: relative; text-align: center; }
+.eyebrow { display: inline-block; font-family: var(--font-script); font-size: 1.4rem; color: var(--gold-light); margin-bottom: .75rem; }
+.heroContent h1 { color: var(--white); margin-bottom: 1rem; }
+.heroContent p  { color: rgba(255,255,255,.8); font-size: 1.05rem; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+}
+
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+
+.imageWrap {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.card:hover .cardImage { transform: scale(1.05); }
+
+.body { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+
+.cardHeader { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+
+.icon { font-size: 1.6rem; }
+
+.title { font-size: 1.25rem; color: var(--green-dark); margin: 0; }
+
+.desc { font-size: .9rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 1rem; flex: 1; }
+
+.highlights { display: flex; flex-direction: column; gap: .35rem; }
+
+.highlights li { font-size: .82rem; color: var(--gray-700); display: flex; gap: .4rem; align-items: center; }
+
+.check { color: var(--green-light); font-weight: 700; }
+
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }

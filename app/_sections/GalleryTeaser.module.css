@@ -1,0 +1,65 @@
+.section { background: var(--gray-50); }
+
+.mosaicGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.mosaic {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mosaic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s var(--ease);
+}
+
+.mosaic:hover img { transform: scale(1.08); }
+
+.hoverOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26,58,42,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+  font-size: 2rem;
+}
+
+.mosaic:hover .hoverOverlay { opacity: 1; }
+
+/* Mosaic layout */
+.m0 { grid-column: span 2; grid-row: span 2; }
+.m1 { grid-column: span 1; }
+.m2 { grid-column: span 1; }
+.m3 { grid-column: span 1; }
+.m4 { grid-column: span 1; }
+.m5 { grid-column: span 2; }
+
+.cta { text-align: center; }
+
+@media (max-width: 768px) {
+  .mosaicGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .m0 { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
+  .m1, .m2, .m3, .m4 { aspect-ratio: 1; }
+  .m5 { grid-column: span 2; aspect-ratio: 16/9; }
+}
+
+@media (max-width: 500px) {
+  .mosaicGrid { grid-template-columns: 1fr; }
+  .m0, .m5 { grid-column: span 1; }
+}

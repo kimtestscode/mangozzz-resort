@@ -1,0 +1,222 @@
+/* ── Navbar ── */
+.header {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 1000;
+  transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+  padding-block: 1.2rem;
+}
+
+/* Transparent on home hero */
+.header:not(.scrolled):not(.solid) {
+  background: transparent;
+}
+
+/* Glassmorphism after scroll or on inner pages */
+.header.scrolled,
+.header.solid {
+  background: rgba(26, 58, 42, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 30px rgba(0,0,0,.3);
+  padding-block: .8rem;
+}
+
+.inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-shrink: 0;
+}
+
+.logoImg {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.logoIcon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.3));
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logoMain {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--white);
+  letter-spacing: .02em;
+}
+
+.logoSub {
+  font-size: .65rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--green-pale);
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  margin-inline-start: auto;
+}
+
+.link {
+  font-size: .88rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.85);
+  padding: .45rem .8rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--white);
+  background: rgba(255,255,255,.1);
+}
+
+.link.active {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+/* CTA Button */
+.cta {
+  margin-inline-start: 1rem;
+  padding: .55rem 1.4rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--gold), #a07c2a);
+  color: var(--white);
+  font-size: .88rem;
+  font-weight: 700;
+  transition: all var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 3px 12px rgba(201,168,76,.4);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201,168,76,.5);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  margin-inline-start: auto;
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile Drawer */
+.drawer {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-end: -100%;
+  width: min(320px, 85vw);
+  height: 100dvh;
+  background: var(--green-dark);
+  padding: 6rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  transition: inset-inline-end .35s var(--ease);
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.drawerOpen {
+  inset-inline-end: 0;
+}
+
+.drawer nav {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.drawerLink {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.8);
+  padding: .9rem 1rem;
+  border-radius: var(--radius-md);
+  transition: background var(--transition), color var(--transition);
+}
+
+.drawerLink:hover,
+.drawerLink.active {
+  background: rgba(255,255,255,.08);
+  color: var(--white);
+}
+
+.drawerLink.active {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.drawerCta {
+  margin-block-start: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--gold), #a07c2a);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 998;
+  backdrop-filter: blur(3px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .nav, .cta { display: none; }
+  .hamburger  { display: flex; }
+  .inner      { justify-content: space-between; }
+}

@@ -1,0 +1,15 @@
+[2026-08-04 05:41:46] [103.136.44.145] Execution time limit: 80 seconds (PHP max_execution_time: 90)
+[2026-08-04 05:41:46] [103.136.44.145] Starting reindex for JetBackup Linux
+[2026-08-04 05:41:46] [103.136.44.145] Execution time: 0
+[2026-08-04 05:41:46] [103.136.44.145] TTL time: 80
+[2026-08-04 05:41:46] [103.136.44.145] Hiding all destination snapshots
+[2026-08-04 05:41:46] [103.136.44.145] Execution time: 0
+[2026-08-04 05:41:46] [103.136.44.145] TTL time: 80
+[2026-08-04 05:41:46] [103.136.44.145] 	[_handleJBSnapshot] New snapshot found! Importing to local database...
+[2026-08-04 05:41:46] [103.136.44.145] 	[_handleJBSnapshot] New snapshot found! Importing to local database...
+[2026-08-04 05:41:46] [103.136.44.145] [_reindexSnapshots] Page 0 completed (2 backups, 2 total)
+[2026-08-04 05:41:46] [103.136.44.145] Execution time: 0
+[2026-08-04 05:41:46] [103.136.44.145] TTL time: 80
+[2026-08-04 05:41:46] [103.136.44.145] Removing all unneeded snapshots
+[2026-08-04 05:41:46] [103.136.44.145] Completed!
+[2026-08-04 05:41:46] [103.136.44.145] Total time: 80

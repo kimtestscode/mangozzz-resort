@@ -1,0 +1,99 @@
+.wrapper {
+  background: var(--green-dark);
+  padding-block: 0;
+  margin-top: -2px;
+}
+
+.widget {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  transform: translateY(-40px);
+  margin-bottom: -40px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem;
+  min-width: 0;
+}
+
+.field label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: .4rem;
+}
+
+.field input,
+.field select {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.field input:focus,
+.field select:focus {
+  color: var(--green-mid);
+}
+
+.divider {
+  width: 1px;
+  background: var(--gray-200);
+  align-self: stretch;
+  margin-block: .75rem;
+}
+
+.btn {
+  flex-shrink: 0;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, var(--green-mid), var(--green-dark));
+  color: var(--white);
+  font-size: .95rem;
+  font-weight: 700;
+  border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+  transition: all var(--transition);
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  letter-spacing: .02em;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+}
+
+@media (max-width: 900px) {
+  .widget {
+    flex-direction: column;
+    transform: translateY(-24px);
+    margin-bottom: -24px;
+    border-radius: var(--radius-lg);
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin-block: 0;
+    margin-inline: .75rem;
+    align-self: auto;
+  }
+
+  .btn {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    text-align: center;
+  }
+}

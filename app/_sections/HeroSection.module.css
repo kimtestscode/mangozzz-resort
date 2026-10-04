@@ -1,0 +1,155 @@
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--white);
+}
+
+/* Background */
+.bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/client-media/reduced/General Photos/Resort.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transform: scale(1.05);
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.12); }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10, 30, 20, 0.75) 0%,
+    rgba(26, 58, 42, 0.65) 50%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: calc(4px + var(--i, 0) * 2px);
+  height: calc(4px + var(--i, 0) * 2px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,.6), transparent);
+  top: calc(10% + var(--i, 0) * 7%);
+  left: calc(5% + var(--i, 0) * 8%);
+  animation: float calc(4s + var(--i, 0) * .5s) ease-in-out infinite alternate;
+  animation-delay: calc(var(--i, 0) * .3s);
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-block: 8rem 4rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--gold-light);
+  margin-bottom: .75rem;
+  animation: fadeInUp .8s .2s var(--ease) both;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp .8s .4s var(--ease) both;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--gold-light);
+  display: block;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255,255,255,.85);
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  animation: fadeInUp .8s .6s var(--ease) both;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp .8s .8s var(--ease) both;
+}
+
+/* Scroll indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+  animation: fadeIn 1s 1.5s var(--ease) both;
+}
+
+.scrollIndicator p {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-top: .5rem;
+}
+
+.mouse {
+  display: block;
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-radius: 12px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.wheel {
+  display: block;
+  width: 3px;
+  height: 8px;
+  background: rgba(255,255,255,.7);
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: wheelScroll 2s ease infinite;
+}
+
+@keyframes wheelScroll {
+  0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(14px); }
+}

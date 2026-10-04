@@ -1,0 +1,30 @@
+.hero { position: relative; padding-block: 10rem 5rem; color: var(--white); overflow: hidden; }
+.heroBg { position: absolute; inset: 0; background-image: url('/client-media/reduced/General Photos/Resort View .jpg'); background-size: cover; background-position: center; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(26,58,42,.88), rgba(0,0,0,.65)); }
+.heroContent { position: relative; text-align: center; }
+.eyebrow { display: inline-block; font-family: var(--font-script); font-size: 1.4rem; color: var(--gold-light); margin-bottom: .75rem; }
+.heroContent h1 { color: var(--white); }
+
+/* Story */
+.storyLayout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.storyText h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: .5rem; }
+.storyText p { color: var(--gray-600); line-height: 1.75; }
+
+.storyImages { position: relative; }
+.imgMain { border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4/3; object-fit: cover; box-shadow: var(--shadow-xl); }
+.imgSecondary { position: absolute; bottom: -2rem; left: -2rem; width: 55%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 4px solid var(--white); aspect-ratio: 4/3; object-fit: cover; }
+
+/* Why */
+.whyGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.whyCard { padding: 2rem; border-radius: var(--radius-lg); background: var(--white); box-shadow: var(--shadow-sm); text-align: center; transition: transform var(--transition), box-shadow var(--transition); }
+.whyCard:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.whyIcon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+.whyCard h3 { font-size: 1.1rem; color: var(--green-dark); margin-bottom: .5rem; }
+.whyCard p { font-size: .88rem; color: var(--gray-600); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .storyLayout { grid-template-columns: 1fr; }
+  .storyImages { display: none; }
+  .whyGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) { .whyGrid { grid-template-columns: 1fr; } }
