@@ -7,12 +7,10 @@ import styles from './Navbar.module.css';
 
 const navLinks = [
   { href: '/',           label: 'Home' },
+  { href: '/amenities',  label: 'Amenities & Activities' },
   { href: '/menu',       label: 'Restaurant Menu' },
-  { href: '/about-us',   label: 'About Us' },
   { href: '/weddings',   label: 'Weddings & Events' },
-  { href: '/amenities',  label: 'Amenities' },
-  { href: '/adventures', label: 'Adventures' },
-  { href: '/games',      label: 'Games' },
+  { href: '/about-us',   label: 'About Us' },
   { href: '/gallery',    label: 'Gallery' },
   { href: '/contact',    label: 'Contact' },
 ];

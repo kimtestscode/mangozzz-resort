@@ -154,7 +154,6 @@ export default function MenuModal({ isOpen, onClose }) {
                     </div>
                     <span className={styles.itemPrice}>{item.price}</span>
                   </div>
-                  {item.desc && <p className={styles.itemDesc}>{item.desc}</p>}
                 </article>
               ))}
             </div>

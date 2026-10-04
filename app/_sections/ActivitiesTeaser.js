@@ -2,12 +2,12 @@ import Link from 'next/link';
 import styles from './ActivitiesTeaser.module.css';
 
 const activities = [
-  { icon: '⛺', title: 'River Tents',     desc: 'Sleep under the stars beside the flowing river' },
-  { icon: '🔥', title: 'Bonfire',          desc: 'Gather around crackling flames on cool evenings' },
-  { icon: '🧗', title: 'Zip Lining',       desc: 'Soar through the canopy on an exhilarating zip line' },
-  { icon: '🚣', title: 'Kayaking',         desc: 'Paddle through scenic river waters at your own pace' },
-  { icon: '⛵', title: 'Boating',          desc: 'Peaceful boat rides on the river at sunset' },
-  { icon: '🌊', title: 'River Crossing',   desc: 'Adventure-packed river crossing for the brave at heart' },
+  { icon: '🔄', title: '360° Cycling',   desc: 'Defy gravity on our thrilling 360-degree rotating loop cycle' },
+  { icon: '🌲', title: 'High Zipline',   desc: 'Soar through the lush mango canopy on an aerial zip line' },
+  { icon: '🎯', title: 'Target Shooting', desc: 'Test your aim with air rifle shooting at guided target range' },
+  { icon: '🏹', title: 'Archery Arena',   desc: 'Practice bow & arrow precision target shooting on green lawns' },
+  { icon: '🌉', title: 'Brahma Bridge',  desc: 'Cross suspended planks on our high-rope adventure obstacle trail' },
+  { icon: '🌧️', title: 'Rain Dance & Pool', desc: 'Splash in crystal pool & dance to high-energy rain beats' },
 ];
 
 export default function ActivitiesTeaser() {
@@ -15,9 +15,11 @@ export default function ActivitiesTeaser() {
     <section className={`section ${styles.section}`} id="adventures-preview">
       <div className="container">
         <div className="section-header">
-          <span className="label">Thrill &amp; Adventure</span>
-          <h2>Unforgettable Experiences</h2>
-          <p>Dive into a world of adventure — from riverside activities to jungle thrills.</p>
+          <span className="label">Thrill &amp; Adventure Zone</span>
+          <h2>Unforgettable Activities &amp; Games</h2>
+          <p>
+            From high-flying ziplines and 360° cycling to 12+ complimentary indoor and outdoor games — experience unlimited resort fun.
+          </p>
           <div className="divider" />
         </div>
 
@@ -36,8 +38,8 @@ export default function ActivitiesTeaser() {
         </div>
 
         <div className={styles.cta}>
-          <Link href="/adventures" className="btn btn-gold btn-lg">🏕️ See All Adventures</Link>
-          <Link href="/games"      className="btn btn-primary btn-lg">🎮 View Games</Link>
+          <Link href="/amenities" className="btn btn-gold btn-lg">🎯 Explore All Activities &amp; Games</Link>
+          <Link href="/menu"      className="btn btn-primary btn-lg">📜 View Restaurant Menu</Link>
         </div>
       </div>
     </section>

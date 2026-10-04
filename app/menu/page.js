@@ -181,7 +181,6 @@ export default function RestaurantMenuPage() {
                       </div>
                       <span className={styles.dishPrice}>{item.price}</span>
                     </div>
-                    {item.desc && <p className={styles.dishDesc}>{item.desc}</p>}
                   </article>
                 ))}
               </div>
