@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './RoomsSection.module.css';
 
-export default function RoomCard({ room }) {
+export default function RoomCard({ room, tariffMode = 'weekday' }) {
   const images = room.images && room.images.length > 0 ? room.images : [room.image];
   const [currentIdx, setCurrentIdx] = useState(0);
 
@@ -35,6 +35,9 @@ export default function RoomCard({ room }) {
     e.stopPropagation();
     setCurrentIdx(idx);
   };
+
+  const currentPrice = tariffMode === 'weekend' ? room.weekend : room.weekday;
+  const priceDisplay = typeof currentPrice === 'number' ? `₹${currentPrice.toLocaleString('en-IN')}` : currentPrice;
 
   return (
     <article className={styles.card}>
@@ -90,9 +93,9 @@ export default function RoomCard({ room }) {
         <h3 className={styles.name}>{room.name}</h3>
 
         <div className={styles.meta}>
-          <span>👤 {room.adults} Adults</span>
-          <span>👶 {room.children} Child</span>
+          <span>👥 {room.capacity}</span>
           <span>📐 {room.size}</span>
+          <span>🍳 Inc. Breakfast</span>
         </div>
 
         <ul className={styles.features}>
@@ -104,12 +107,19 @@ export default function RoomCard({ room }) {
         </ul>
 
         <div className={styles.footer}>
-          <div className={styles.price}>
-            <span className={styles.priceAmount}>₹{room.price.toLocaleString('en-IN')}</span>
-            <span className={styles.priceNote}>/night</span>
+          <div className={styles.priceBlock}>
+            <div className={styles.priceMain}>
+              <span className={styles.priceAmount}>{priceDisplay}</span>
+              <span className={styles.priceNote}>/night</span>
+            </div>
+            {typeof room.weekday === 'number' && typeof room.weekend === 'number' && (
+              <span className={styles.dualRateNote}>
+                WD: ₹{room.weekday.toLocaleString('en-IN')} · WE: ₹{room.weekend.toLocaleString('en-IN')}
+              </span>
+            )}
           </div>
           <Link
-            href={`/book?room=${room.id}`}
+            href={`/book?room=${room.slug || room.id}`}
             className={`btn btn-primary ${styles.bookBtn}`}
           >
             Book Now

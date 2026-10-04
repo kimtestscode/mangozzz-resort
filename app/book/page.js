@@ -7,14 +7,17 @@ import Footer from '@/components/Footer/Footer';
 import styles from './page.module.css';
 
 const roomTypes = [
-  { id: 'woodhouse-villa',           label: 'Authentic Woodhouse Villa — ₹4,500/night' },
-  { id: 'pool-view-cottage',         label: 'Pool View Cottage — ₹3,000/night' },
-  { id: 'pool-side-double-cottage',  label: 'Pool View Double Bed Cottage — ₹6,000/night' },
-  { id: 'river-view-cottage',        label: 'River View Cottage — ₹3,500/night' },
-  { id: 'river-view-double',         label: 'River View Double Bed Cottage — ₹7,000/night' },
-  { id: 'mountain-view-room',        label: 'Mountain View Room — ₹3,200/night' },
-  { id: 'garden-view-cottage',       label: 'Garden View Cottage — ₹3,000/night' },
-  { id: 'family-room',               label: 'Spacious Family & Group Suite — ₹9,500/night' },
+  { id: 'river-view-deluxe',          label: 'River View Deluxe — WD: ₹3,500 / WE: ₹4,000' },
+  { id: 'mountain-view-deluxe',       label: 'Mountain View Deluxe — WD: ₹3,500 / WE: ₹4,000' },
+  { id: 'river-view-supreme-double',  label: 'River View Supreme Deluxe Double Bed — WD: ₹7,000 / WE: ₹7,450' },
+  { id: 'woodhouse-1',                label: 'Wood House 1 (Authentic Wood Villa) — WD: ₹5,500 / WE: ₹6,500' },
+  { id: 'woodhouse-2',                label: 'Wood House 2 (Cozy Wood Cottage) — WD: ₹4,500 / WE: ₹5,000' },
+  { id: 'garden-view-room',           label: 'Garden View Room — WD: ₹3,500 / WE: ₹4,000' },
+  { id: 'pool-view-room',             label: 'Pool View Room — WD: ₹3,000 / WE: ₹3,500' },
+  { id: 'pool-view-supreme-double',   label: 'Pool View Supreme Deluxe Double Bed — WD: ₹6,000 / WE: ₹6,500' },
+  { id: 'family-room',                label: 'Family & Group Suite (*APP* / Custom)' },
+  { id: 'day-picnic',                 label: 'One Day Picnic Pass — ₹1,500 / person (Meals + Pool + Games)' },
+  { id: 'all-inclusive-stay',         label: 'All-Inclusive 24-Hr Stay Package — WD: ₹3,500 / WE: ₹4,000 per head' },
 ];
 
 function BookingForm() {
@@ -370,14 +373,14 @@ export default function BookPage() {
                 </div>
 
                 <div className={styles.infoCard}>
-                  <h3>ℹ️ Booking Info</h3>
+                  <h3>ℹ️ Booking &amp; Resort Info</h3>
                   <ul className={styles.infoList}>
-                    <li>✓ Confirmation within 24 hours</li>
-                    <li>✓ Free cancellation (see policy)</li>
-                    <li>✓ Check-in: 12:00 PM</li>
-                    <li>✓ Check-out: 11:00 AM</li>
-                    <li>✓ Pets not allowed</li>
-                    <li>✓ Smoking not permitted</li>
+                    <li>✓ Complimentary Breakfast (8:30 AM – 10:30 AM)</li>
+                    <li>✓ Check-in: 1:00 PM</li>
+                    <li>✓ Check-out: Before 11:00 AM</li>
+                    <li>✓ Extra Mattress: ₹1,200</li>
+                    <li>✓ Room Service Dial: 222 / 223</li>
+                    <li>✓ Instant confirmation via WhatsApp</li>
                   </ul>
                 </div>
               </aside>
