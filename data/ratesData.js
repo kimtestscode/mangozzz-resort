@@ -175,7 +175,6 @@ export const officialRateChart = {
     tagline: 'Unlimited Fun, Food & Adventure from Morning to Evening!',
     includes: 'Breakfast, Lunch, Hi-Tea & Resort Activities with Unlimited Fun',
     features: [
-      'Welcome Drink on Arrival',
       'Morning Buffet Breakfast (8:30 AM – 10:30 AM)',
       'Lavish Multi-Cuisine Buffet Lunch',
       'Evening Hi-Tea with Crispy Snacks',
