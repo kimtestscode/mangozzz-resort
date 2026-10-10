@@ -7,6 +7,7 @@ import RoomsSection from './_sections/RoomsSection';
 import WeddingTeaser from './_sections/WeddingTeaser';
 import ActivitiesTeaser from './_sections/ActivitiesTeaser';
 import AmenitiesTeaser from './_sections/AmenitiesTeaser';
+import DroneShowcase from './_sections/DroneShowcase';
 import GalleryTeaser from './_sections/GalleryTeaser';
 import CtaBanner from './_sections/CtaBanner';
 
@@ -132,6 +133,7 @@ export default function HomePage() {
         <RoomsSection />
         <WeddingTeaser />
         <AmenitiesTeaser />
+        <DroneShowcase />
         <ActivitiesTeaser />
         <GalleryTeaser />
         <CtaBanner />

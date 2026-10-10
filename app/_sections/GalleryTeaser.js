@@ -2,12 +2,12 @@ import Link from 'next/link';
 import styles from './GalleryTeaser.module.css';
 
 const images = [
-  { src: '/client-media/reduced/General Photos/Resort.jpg',              alt: 'Mangozzz Resort Grounds & Cottages' },
+  { src: '/client-media/reduced/General Photos/New Drone View 1.png',    alt: 'Aerial Top-View Drone Shot of Mangozzz Resort' },
   { src: '/client-media/reduced/General Photos/Pool.jpg',                alt: 'Resort Swimming Pool & Deck' },
   { src: '/client-media/reduced/General Photos/Both Wood House.jpg',     alt: 'Authentic Woodhouse Riverside Cottages' },
   { src: '/client-media/reduced/General Photos/Alphonso Restaurant.jpg', alt: 'Alphonso Restaurant & Dining' },
-  { src: '/client-media/reduced/General Photos/Resort night.jpg',        alt: 'Resort Evening & Night View' },
-  { src: '/client-media/reduced/General Photos/Walkway.jpg',             alt: 'Riverside Walkway & Mango Groves' },
+  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM.jpeg', alt: 'Riverside Destination Wedding Setup' },
+  { src: '/client-media/reduced/General Photos/Resort.jpg',              alt: 'Resort Grounds & Sahyadri Hills' },
 ];
 
 export default function GalleryTeaser() {

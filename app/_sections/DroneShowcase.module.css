@@ -1,0 +1,167 @@
+.section {
+  background: linear-gradient(180deg, var(--cream, #faf8f2) 0%, #f4efe4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Image container */
+.imgContainer {
+  position: relative;
+  border-radius: var(--radius-lg, 20px);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(18, 38, 28, 0.18);
+  border: 2px solid rgba(201, 168, 76, 0.3);
+  background: var(--green-dark, #12261c);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.droneImg {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.imgContainer:hover .droneImg {
+  transform: scale(1.04);
+}
+
+.droneBadge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(18, 38, 28, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--gold-light, #f0d080);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.captionOverlay {
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  padding: 2rem 1.5rem 1.25rem;
+  background: linear-gradient(to top, rgba(10, 25, 18, 0.9) 0%, rgba(10, 25, 18, 0.5) 60%, transparent 100%);
+  color: var(--white, #ffffff);
+}
+
+.captionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.captionSub {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Content Column */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--green-dark, #12261c);
+  line-height: 1.2;
+}
+
+.title span {
+  color: var(--gold, #c9a84c);
+  font-style: italic;
+}
+
+.desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--gray-700, #374151);
+}
+
+.pointsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.pointItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background: #ffffff;
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid rgba(18, 38, 28, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pointItem:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pointIcon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.pointText h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--green-dark, #12261c);
+  margin-bottom: 0.15rem;
+}
+
+.pointText p {
+  font-size: 0.85rem;
+  color: var(--gray-600, #4b5563);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .imgContainer {
+    max-width: 420px;
+    width: 100%;
+  }
+}

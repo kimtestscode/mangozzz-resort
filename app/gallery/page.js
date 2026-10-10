@@ -48,6 +48,7 @@ const galleryImages = [
   { src: '/client-media/reduced/General Photos/4.jpg',                  alt: 'Family Dining Experience',             category: 'Dining' },
 
   // Resort & Drone
+  { src: '/client-media/reduced/General Photos/New Drone View 1.png',   alt: 'Aerial Top-View Drone Shot of Mangozzz Resort Layout', category: 'Resort & Drone' },
   { src: '/client-media/reduced/General Photos/Resort.jpg',             alt: 'Panoramic View of Mangozzz Resort',    category: 'Resort & Drone' },
   { src: '/client-media/reduced/General Photos/Drone.jpg',              alt: 'Aerial Drone Shot of Entire Property', category: 'Resort & Drone' },
   { src: '/client-media/reduced/General Photos/Resort View .jpg',       alt: 'Resort Walkway & Sahyadri Hills',      category: 'Resort & Drone' },
