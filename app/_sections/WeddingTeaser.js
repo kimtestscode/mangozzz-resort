@@ -6,10 +6,10 @@ export default function WeddingTeaser() {
     <section className={`section ${styles.section}`}>
       <div className="container">
         <div className="section-header">
-          <span className="label">Destination Celebrations</span>
-          <h2>Riverside Weddings &amp; Grand Events</h2>
+          <span className="label">Premier Destination Weddings</span>
+          <h2>Riverside Destination Wedding Venue in Karjat / Khalapur</h2>
           <p>
-            Create timeless memories against the Sahyadri hills with our expansive lawns, banquet hall, and poolside celebrations.
+            Experience fairytale destination weddings against the Sahyadri mountains with our 800–1,000 pax riverside lawns, AC banquet hall, and poolside celebrations.
           </p>
           <div className="divider" />
         </div>
@@ -19,7 +19,7 @@ export default function WeddingTeaser() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM.jpeg"
-              alt="Riverside Destination Wedding Setup at Mangozzz Magical World Resort"
+              alt="Riverside Destination Wedding Venue in Karjat - Mangozzz Magical World Resort Lawn and Mandap Setup"
               className={styles.img}
               loading="lazy"
             />
@@ -38,14 +38,12 @@ export default function WeddingTeaser() {
           </div>
 
           <div className={styles.content}>
-            <span className={styles.tag}>Dream Destination Venue</span>
+            <span className={styles.tag}>Premier Destination Wedding Venue</span>
             <h3 className={styles.title}>
-              Celebrate Love by the River in Khalapur &amp; Karjat
+              Host Your Dream Destination Wedding at Mangozzz Magical World Resort Karjat
             </h3>
             <p className={styles.desc}>
-              From royal open-air wedding mandaps under the stars to intimate garden engagements and poolside Haldi bashes,
-              Mangozzz Magical World Resort offers complete event infrastructure, in-house Alphonso gourmet catering,
-              and luxury overnight stays for 150+ guests.
+              Surrounded by lush mango orchards, Patalganga river breezes, and the majestic Sahyadri hills, Mangozzz Magical World Resort is the premier riverside destination wedding venue near Mumbai &amp; Pune. Featuring grand 800–1,000 pax open lawns, a 300–400 pax AC banquet hall, vibrant poolside Haldi deck, in-house Alphonso gourmet catering, and luxury stay for 150+ guests.
             </p>
 
             <div className={styles.featuresGrid}>

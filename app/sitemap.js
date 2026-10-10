@@ -12,8 +12,14 @@ export default function sitemap() {
     {
       url: `${baseUrl}/weddings`,
       lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/menu`,
+      lastModified: currentDate,
       changeFrequency: 'weekly',
-      priority: 0.95,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/about-us`,

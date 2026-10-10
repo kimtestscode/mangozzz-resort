@@ -6,12 +6,16 @@ import WeddingFaq from './WeddingFaq';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Destination Weddings & Events Venue in Karjat / Khalapur (800-1000 Pax Lawn, Banquet & Poolside) | Mangozzz Magical World Resort',
+  title: 'Destination Wedding Venue in Karjat / Khalapur (800-1000 Pax Lawn & Banquet) | Mangozzz Magical World Resort Karjat',
   description:
-    'Host your dream riverside destination wedding at Mangozzz Magical World Resort, Khalapur near Karjat, Mumbai & Pune. Featuring an 800-1000 Pax open lawn, 300-400 Pax AC banquet hall, vibrant poolside Haldi setup, and budget-friendly open garden for intimate weddings.',
+    'Host your dream riverside destination wedding at Mangozzz Magical World Resort in Karjat / Khalapur near Mumbai & Pune. Featuring an 800-1,000 Pax open riverside lawn, 300-400 Pax AC banquet hall, vibrant poolside Haldi deck, luxury wooden villa stay for 150+ guests, and complete in-house wedding planning.',
   keywords: [
+    'Mangozzz Magical World resort karjat',
+    'Mangozzz Magical World destination wedding',
     'Destination Wedding Karjat',
+    'Destination Wedding Venue Karjat',
     'Destination Wedding Venue Khalapur',
+    'Riverside Wedding Venue Karjat',
     'Wedding Lawn 1000 Pax Karjat',
     'Banquet Hall 400 Pax Karjat',
     'Riverside Wedding Resort Maharashtra',
@@ -20,11 +24,12 @@ export const metadata = {
     'Destination Wedding Resort Near Mumbai',
     'Destination Wedding Resort Near Pune',
     'Mangozzz Magical World Resort Weddings',
+    'resort in Karjat for wedding',
   ],
   openGraph: {
-    title: 'Riverside Destination Weddings & Events | Mangozzz Magical World Resort',
+    title: 'Riverside Destination Wedding Venue in Karjat | Mangozzz Magical World Resort',
     description:
-      'Grand open lawn for 800-1000 pax, AC banquet for 300-400 pax, poolside Haldi & budget open garden setups in Khalapur / Karjat.',
+      'Grand riverside wedding lawn for 800-1,000 pax, AC banquet for 300-400 pax, poolside Haldi & luxury stay for 150+ guests in Karjat / Khalapur.',
     url: 'https://mangozzz.com/weddings',
     siteName: 'Mangozzz Magical World Resort',
     images: [
@@ -32,7 +37,7 @@ export const metadata = {
         url: 'https://mangozzz.com/client-media/reduced/Wedding/WhatsApp%20Image%202026-09-15%20at%203.36.28%20PM.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Destination Wedding at Mangozzz Magical World Resort',
+        alt: 'Riverside Destination Wedding Venue at Mangozzz Magical World Resort Karjat',
       },
     ],
     locale: 'en_IN',
@@ -179,35 +184,101 @@ const galleryHighlights = [
 export default function WeddingsPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': ['EventVenue', 'WeddingVenue', 'Hotel'],
-    name: 'Mangozzz Magical World Resort — Destination Wedding Venue',
-    description:
-      'Premier riverside destination wedding resort in Khalapur near Karjat, Mumbai & Pune. Features an 800-1000 pax open lawn, 300-400 pax AC banquet hall, poolside Haldi deck, and open garden setups.',
-    url: 'https://mangozzz.com/weddings',
-    telephone: '+91 79771 27312',
-    email: 'mangozzzmagicalworld@gmail.com',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Survey No. 59/1, 59/6/A, 59/6/B, Asarewadi, near Swaminarayan Gurukul School, Chouk',
-      addressLocality: 'Khalapur, near Karjat',
-      addressRegion: 'Maharashtra',
-      postalCode: '410206',
-      addressCountry: 'IN',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '18.9038',
-      longitude: '73.2842',
-    },
-    maximumAttendeeCapacity: 1000,
-    amenityFeature: [
-      { '@type': 'LocationFeatureSpecification', name: 'Open Wedding Lawn', value: '800-1000 Pax' },
-      { '@type': 'LocationFeatureSpecification', name: 'AC Banquet Hall', value: '300-400 Pax' },
-      { '@type': 'LocationFeatureSpecification', name: 'Poolside Haldi Setup', value: '100-250 Pax' },
-      { '@type': 'LocationFeatureSpecification', name: 'Intimate Garden Setup', value: '50-150 Pax' },
-      { '@type': 'LocationFeatureSpecification', name: 'Overnight Guest Stay', value: '150+ Guests' },
-      { '@type': 'LocationFeatureSpecification', name: 'In-House Multi-Cuisine Catering', value: true },
-      { '@type': 'LocationFeatureSpecification', name: 'Valet Parking', value: true },
+    '@graph': [
+      {
+        '@type': ['EventVenue', 'WeddingVenue', 'Hotel', 'Resort'],
+        '@id': 'https://mangozzz.com/weddings#venue',
+        name: 'Mangozzz Magical World Resort Karjat — Riverside Destination Wedding Venue',
+        alternateName: [
+          'Mangozzz Magical World Resort',
+          'Mangozzz Destination Wedding Venue Karjat',
+          'Mangozzz Resort Karjat Wedding Lawn',
+        ],
+        description:
+          'Premier riverside destination wedding venue in Karjat / Khalapur near Mumbai & Pune. Features an 800-1,000 pax open lawn, 300-400 pax AC banquet hall, poolside Haldi & Sangeet deck, open garden setups, and overnight stay for 150+ guests in authentic wooden villas.',
+        url: 'https://mangozzz.com/weddings',
+        telephone: '+91 79771 27312',
+        email: 'mangozzzmagicalworld@gmail.com',
+        priceRange: '₹₹ - ₹₹₹',
+        image: 'https://mangozzz.com/client-media/reduced/Wedding/WhatsApp%20Image%202026-09-15%20at%203.36.28%20PM.jpeg',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Survey No. 59/1, 59/6/A, 59/6/B, Asarewadi, near Swaminarayan Gurukul School, Chouk',
+          addressLocality: 'Khalapur, near Karjat',
+          addressRegion: 'Maharashtra',
+          postalCode: '410206',
+          addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: '18.9038',
+          longitude: '73.2842',
+        },
+        maximumAttendeeCapacity: 1000,
+        amenityFeature: [
+          { '@type': 'LocationFeatureSpecification', name: 'Open Wedding Lawn', value: '800-1000 Pax' },
+          { '@type': 'LocationFeatureSpecification', name: 'AC Banquet Hall', value: '300-400 Pax' },
+          { '@type': 'LocationFeatureSpecification', name: 'Poolside Haldi Setup', value: '100-250 Pax' },
+          { '@type': 'LocationFeatureSpecification', name: 'Intimate Garden Setup', value: '50-150 Pax' },
+          { '@type': 'LocationFeatureSpecification', name: 'Overnight Guest Stay', value: '150+ Guests' },
+          { '@type': 'LocationFeatureSpecification', name: 'In-House Multi-Cuisine Catering', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Valet Parking', value: true },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://mangozzz.com/weddings#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What is the guest capacity for weddings at Mangozzz Magical World Resort Karjat?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Mangozzz Magical World Resort accommodates gatherings of all sizes: our Grand Open Lawn hosts 800 to 1,000+ guests, our climate-controlled AC Banquet Hall hosts 300 to 400 guests, our Poolside Deck hosts 100 to 250 guests for Haldi/Mehendi, and our Budget-Friendly Garden setup hosts intimate weddings of 50 to 150 guests.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Where is Mangozzz Magical World Resort located and how accessible is it for wedding guests from Mumbai and Pune?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'The resort is located along the scenic Patalganga river in Asarewadi, Chouk, Khalapur (near Karjat), Maharashtra. It is just 1.5 hours from Mumbai / Navi Mumbai via the Mumbai-Pune Expressway and 1.5 to 2 hours from Pune, making it an ideal destination wedding location for guests from both metropolitan areas.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Can wedding guests stay overnight at Mangozzz Magical World Resort Karjat?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes! We offer full resort buyout options with 8 authentic accommodation categories including Handcrafted Woodhouse Villas, Pool View Cottages, River View Cottages, Mountain View Rooms, and Spacious Family Suites that comfortably accommodate 150+ wedding guests overnight.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What dining and catering options are available for wedding events?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Our Alphonso Restaurant in-house culinary masterchefs prepare lavish Maharashtrian wedding feasts, North Indian buffets, Gujarati / Pure Jain satvik counters, live chaat stalls, continental courses, and custom mocktail bars.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Can we host pre-wedding ceremonies like Haldi, Mehendi, and Sangeet at Mangozzz Resort?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Absolutely! Our resort is purpose-built for multi-day destination celebrations. You can host Haldi & Rain Dance by the turquoise swimming pool, an open-air sunset Mehendi in the mango groves, a high-energy Sangeet in the AC Banquet Hall, and the grand Mandap ceremony under the stars on the 1000-pax lawn.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Is parking and power backup available for destination weddings at Mangozzz Resort Karjat?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes, we provide dedicated parking for over 100+ vehicles with valet support, 24/7 heavy-duty generator backup for uninterrupted lighting and sound, and bridal green rooms for the couple.',
+            },
+          },
+        ],
+      },
     ],
   };
 

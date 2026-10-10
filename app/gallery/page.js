@@ -61,10 +61,12 @@ const galleryImages = [
   { src: '/client-media/reduced/GameZone/WhatsApp Image 2025-12-20 at 3.22.45 PM.jpeg', alt: 'Lawn Sports & Open Activities', category: 'GameZone' },
 
   // Weddings & Events
-  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM.jpeg',   alt: 'Destination Wedding Stage Decor', category: 'Weddings & Events' },
-  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM (1).jpeg', alt: 'Wedding Mandap & Open Lawn',   category: 'Weddings & Events' },
-  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.29 PM.jpeg',   alt: 'Evening Wedding Atmosphere',     category: 'Weddings & Events' },
-  { src: '/client-media/reduced/Event/banner.jpg',                                      alt: 'Corporate Meets & Celebrations', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM.jpeg',   alt: 'Riverside Destination Wedding Stage Decor at Mangozzz Magical World Resort Karjat', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.28 PM (1).jpeg', alt: 'Grand Open Wedding Lawn 1000 Pax at Mangozzz Resort Karjat', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.29 PM.jpeg',   alt: 'Intimate Garden Haldi & Mehendi Setup at Mangozzz Resort Karjat', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Wedding/WhatsApp Image 2026-09-15 at 3.36.29 PM (1).jpeg', alt: 'Evening Wedding Mandap Lighting & Decor at Mangozzz Resort', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Event/venue/WhatsApp Image 2025-12-30 at 7.02.38 PM.jpeg', alt: '300-400 Pax AC Banquet Hall at Mangozzz Magical World Resort Karjat', category: 'Weddings & Events' },
+  { src: '/client-media/reduced/Event/banner.jpg',                                      alt: 'Corporate Meets, Galas & Grand Celebrations', category: 'Weddings & Events' },
 ];
 
 export default function GalleryPage() {
