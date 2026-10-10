@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="container">
             <div className={styles.storyLayout}>
               <div className={styles.storyText}>
-                <span className="label" style={{ fontFamily: 'var(--font-script)', fontSize: '1.3rem', color: 'var(--green-light)', display: 'block', marginBottom: '.5rem' }}>More Than a Stay</span>
+                <span className="label">More Than a Stay</span>
                 <h2>A Magical Riverside Retreat</h2>
                 <div className="divider" style={{ marginInline: 0, marginTop: '1rem', marginBottom: '1.5rem' }} />
                 <p>

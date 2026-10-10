@@ -2,7 +2,7 @@
 .heroBg { position: absolute; inset: 0; background-image: url('/client-media/reduced/General Photos/Resort night.jpg'); background-size: cover; background-position: center; }
 .overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(26,58,42,.88), rgba(0,0,0,.65)); }
 .heroContent { position: relative; text-align: center; }
-.eyebrow { display: inline-block; font-family: var(--font-script); font-size: 1.4rem; color: var(--gold-light); margin-bottom: .75rem; }
+.eyebrow { display: inline-block; font-family: var(--font-body); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); margin-bottom: .75rem; }
 .heroContent h1 { color: var(--white); margin-bottom: 1rem; }
 .heroContent p  { color: rgba(255,255,255,.8); font-size: 1.05rem; }
 
