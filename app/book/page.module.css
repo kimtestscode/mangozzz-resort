@@ -83,7 +83,7 @@
 
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   gap: 1.25rem;
 }
 
@@ -276,7 +276,7 @@
   .formWrap { padding: 1.75rem 1.25rem; }
   .sidebar {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
     gap: 1.25rem;
   }
 }

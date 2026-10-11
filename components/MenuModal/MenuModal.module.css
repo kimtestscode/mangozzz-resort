@@ -140,7 +140,7 @@
 .searchBox {
   position: relative;
   flex: 1;
-  min-width: 260px;
+  min-width: min(260px, 100%);
 }
 
 .searchIcon {
@@ -467,7 +467,44 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+  .searchBox {
+    min-width: 100%;
+    width: 100%;
+  }
+  .dietToggle {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .dietBtn {
+    flex: 1;
+    text-align: center;
+  }
   .itemsGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .backdrop {
+    padding: 0.25rem;
+  }
+  .header {
+    padding: 1rem 0.85rem 0.65rem;
+  }
+  .title {
+    font-size: 1.15rem;
+  }
+  .controls, .categories, .menuBody, .footer {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .footerBtns {
+    width: 100%;
+    justify-content: center;
   }
 }

@@ -152,20 +152,23 @@
 .drawer {
   position: fixed;
   inset-block-start: 0;
-  inset-inline-end: -100%;
+  inset-inline-end: 0;
   width: min(320px, 85vw);
   height: 100dvh;
   background: var(--green-dark);
   padding: 6rem 2rem 3rem;
   display: flex;
   flex-direction: column;
-  transition: inset-inline-end .35s var(--ease);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform .35s var(--ease), visibility .35s var(--ease);
   z-index: 999;
   overflow-y: auto;
 }
 
 .drawerOpen {
-  inset-inline-end: 0;
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .drawer nav {

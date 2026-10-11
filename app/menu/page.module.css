@@ -118,7 +118,7 @@
 .searchBox {
   position: relative;
   flex: 1;
-  min-width: 280px;
+  min-width: min(280px, 100%);
 }
 
 .searchIcon {
@@ -394,6 +394,10 @@
   }
   .controlsWrap {
     padding: 1rem;
+  }
+  .searchBox {
+    min-width: 100%;
+    width: 100%;
   }
   .dietToggle {
     width: 100%;

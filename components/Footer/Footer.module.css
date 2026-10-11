@@ -59,6 +59,7 @@
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -123,11 +124,15 @@
   font-size: .88rem;
   color: rgba(255,255,255,.65);
   line-height: 1.5;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contactList a {
   color: rgba(255,255,255,.65);
   transition: color var(--transition);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contactList a:hover { color: var(--gold-light); }

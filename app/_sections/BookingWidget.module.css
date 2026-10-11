@@ -85,11 +85,11 @@
   }
 
   .divider {
-    width: 100%;
+    width: auto;
     height: 1px;
     margin-block: 0;
-    margin-inline: .75rem;
-    align-self: auto;
+    margin-inline: 1rem;
+    align-self: stretch;
   }
 
   .btn {
