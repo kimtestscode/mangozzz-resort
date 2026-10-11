@@ -2,7 +2,7 @@ export const officialRateChart = {
   phone1: '7977127312',
   phone2: '8421536362',
   chartImage: '/images/Current Rates.jpeg',
-  menuPdf: '/images/Mangozzz Magical Menu Card.pdf',
+  menuPdf: '/images/Mangozzz-Magical-Menu-Card.pdf',
 
   timings: {
     checkin: '1:00 PM',

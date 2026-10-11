@@ -53,7 +53,8 @@ export default function MenuModal({ isOpen, onClose }) {
           </div>
           <div className={styles.headerActions}>
             <a
-              href="/images/Mangozzz Magical Menu Card.pdf"
+              href="/images/Mangozzz-Magical-Menu-Card.pdf"
+              download="Mangozzz-Magical-Menu-Card.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.pdfBtn}

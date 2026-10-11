@@ -42,7 +42,8 @@ export default function RestaurantMenuPage() {
 
             <div className={styles.heroActions}>
               <a
-                href="/images/Mangozzz Magical Menu Card.pdf"
+                href="/images/Mangozzz-Magical-Menu-Card.pdf"
+                download="Mangozzz-Magical-Menu-Card.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-gold btn-lg"

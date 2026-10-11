@@ -40,3 +40,4 @@ next-env.d.ts
 *.7z
 *.mp4
 *.pdf
+!public/images/*.pdf
