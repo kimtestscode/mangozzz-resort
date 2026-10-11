@@ -11,19 +11,19 @@ const roomsWithPhotos = [
   {
     ...officialRateChart.rooms[0], // River View Deluxe
     images: [
-      '/client-media/reduced/General Photos/River View.jpg',
-      '/client-media/reduced/General Photos/River View 2.jpg',
-      '/client-media/reduced/SRH_2413.jpg',
-      '/client-media/reduced/SRH_2415.jpg',
+      '/client-media/reduced/River View/SRH_2473.jpg',
+      '/client-media/reduced/River View/SRH_2480.jpg',
+      '/client-media/reduced/River View/SRH_2494.jpg',
+      '/client-media/reduced/River View/SRH_2484.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[1], // Mountain View Deluxe
     images: [
-      '/client-media/reduced/General Photos/Mountain View.jpg',
       '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0031.jpg',
       '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0032.jpg',
       '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0038.jpg',
+      '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0040.jpg',
     ],
   },
   {
@@ -32,42 +32,45 @@ const roomsWithPhotos = [
       '/client-media/reduced/RiverView Double/SRH_2527.jpg',
       '/client-media/reduced/RiverView Double/SRH_2528.jpg',
       '/client-media/reduced/RiverView Double/SRH_2529.jpg',
-      '/client-media/reduced/General Photos/River View Double.jpg',
+      '/client-media/reduced/RiverView Double/SRH_2541.jpg',
+      '/client-media/reduced/RiverView Double/SRH_2545.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[3], // Wood House 1 (Authentic Wood Villa)
     images: [
-      '/client-media/reduced/General Photos/Wood house big.jpg',
-      '/client-media/reduced/Woodhouse/IMG-20250331-WA0091.jpg',
-      '/client-media/reduced/Woodhouse/IMG-20250331-WA0092.jpg',
       '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0106.jpg',
+      '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0116.jpg',
+      '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0105.jpg',
+      '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0091.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[4], // Wood House 2 (Cozy Wood Cottage)
     images: [
-      '/client-media/reduced/General Photos/Both Wood House.jpg',
-      '/client-media/reduced/Woodhouse/IMG-20250331-WA0091.jpg',
-      '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0106.jpg',
+      '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.38_977ba5b0.jpg',
+      '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.39_945b03e2.jpg',
+      '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.39_cee0a402.jpg',
+      '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-07 at 18.39.12_695d8a0e.jpg',
+      '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.41_11f2a67a.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[5], // Garden View Room
     images: [
-      '/client-media/reduced/General Photos/Garden View.jpg',
-      '/client-media/reduced/General Photos/Garden View 2.jpg',
       '/client-media/reduced/Garden View/IMG-20250331-WA0135.jpg',
       '/client-media/reduced/Garden View/IMG-20250331-WA0136.jpg',
+      '/client-media/reduced/Garden View/IMG-20250331-WA0137.jpg',
+      '/client-media/reduced/Garden View/IMG-20250331-WA0147.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[6], // Pool View Room
     images: [
-      '/client-media/reduced/General Photos/Pool View.jpg',
-      '/client-media/reduced/General Photos/Pool View 2.jpg',
       '/client-media/reduced/Pool View/IMG_7107-1024x682.jpg',
-      '/client-media/reduced/General Photos/Pool.jpg',
+      '/client-media/reduced/Pool View/IMG_7119-1024x682.jpg',
+      '/client-media/reduced/Pool View/IMG_7121-1024x682.jpg',
+      '/client-media/reduced/Pool View/IMG_7141-1024x682.jpg',
     ],
   },
   {
@@ -76,16 +79,17 @@ const roomsWithPhotos = [
       '/client-media/reduced/Pool View Double/SRH_2511.jpg',
       '/client-media/reduced/Pool View Double/SRH_2513.jpg',
       '/client-media/reduced/Pool View Double/SRH_2515.jpg',
-      '/client-media/reduced/General Photos/Pool View 2.jpg',
     ],
   },
   {
     ...officialRateChart.rooms[8], // Family Room (*APP*)
     images: [
-      '/client-media/reduced/General Photos/Family Room.jpg',
-      '/client-media/reduced/Family Room/SRH_2541.jpg',
-      '/client-media/reduced/Family Room/SRH_2545.jpg',
-      '/client-media/reduced/Family Room/SRH_2528.jpg',
+      '/client-media/reduced/Family Room/SRH_2575.jpg',
+      '/client-media/reduced/Family Room/SRH_2577.jpg',
+      '/client-media/reduced/Family Room/SRH_2581.jpg',
+      '/client-media/reduced/Family Room/SRH_2583.jpg',
+      '/client-media/reduced/Family Room/SRH_2587.jpg',
+      '/client-media/reduced/Family Room/SRH_2596.jpg',
     ],
   },
 ];

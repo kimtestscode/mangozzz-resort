@@ -9,13 +9,13 @@ const tabs = ['All', 'Woodhouse', 'Pool', 'River View', 'Rooms', 'Dining', 'Reso
 
 const galleryImages = [
   // Woodhouse & Cottages
-  { src: '/client-media/reduced/General Photos/Both Wood House.jpg',    alt: 'Both Wood House Cottages',            category: 'Woodhouse' },
+  { src: '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.38_977ba5b0.jpg', alt: 'Woodhouse 2 Bedroom & Wooden Interior',   category: 'Woodhouse' },
+  { src: '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.39_945b03e2.jpg', alt: 'Woodhouse 2 Cottage Wooden Architecture',  category: 'Woodhouse' },
+  { src: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0106.jpg',   alt: 'Woodhouse 1 Interior Architecture',    category: 'Woodhouse' },
+  { src: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0116.jpg',   alt: 'Woodhouse 1 Bedroom & Wood Crafting',  category: 'Woodhouse' },
+  { src: '/client-media/reduced/General Photos/Both Wood House.jpg',    alt: 'Both Wood House Cottages Exterior',    category: 'Woodhouse' },
   { src: '/client-media/reduced/General Photos/Wood house big.jpg',     alt: 'Authentic Woodhouse Villa Exterior',   category: 'Woodhouse' },
-  { src: '/client-media/reduced/General Photos/Woodhouse Small.jpg',    alt: 'Woodhouse Small Cottage',              category: 'Woodhouse' },
-  { src: '/client-media/reduced/Woodhouse/IMG-20250331-WA0091.jpg',     alt: 'Woodhouse Cottage Front Porch',        category: 'Woodhouse' },
-  { src: '/client-media/reduced/Woodhouse/IMG-20250331-WA0092.jpg',     alt: 'Wooden Cottage Balcony & Nature View', category: 'Woodhouse' },
-  { src: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0106.jpg',   alt: 'Woodhouse Interior Architecture',      category: 'Woodhouse' },
-  { src: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0116.jpg',   alt: 'Woodhouse Bedroom & Wood Crafting',    category: 'Woodhouse' },
+  { src: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0091.jpg',   alt: 'Woodhouse Cottage Front Porch',        category: 'Woodhouse' },
 
   // Pool & Pool View
   { src: '/client-media/reduced/General Photos/Pool.jpg',               alt: 'Resort Swimming Pool & Sun Deck',      category: 'Pool' },
@@ -29,17 +29,17 @@ const galleryImages = [
   { src: '/client-media/reduced/General Photos/River View.jpg',         alt: 'River View Cottage Deck',              category: 'River View' },
   { src: '/client-media/reduced/General Photos/River View 2.jpg',       alt: 'Peaceful Riverfront Atmosphere',       category: 'River View' },
   { src: '/client-media/reduced/General Photos/River View Double.jpg',  alt: 'River View Double Cottage Suite',      category: 'River View' },
-  { src: '/client-media/reduced/SRH_2413.jpg',                          alt: 'Serene River Edge View',               category: 'River View' },
-  { src: '/client-media/reduced/SRH_2415.jpg',                          alt: 'Riverside Walk & Nature Deck',         category: 'River View' },
+  { src: '/client-media/reduced/River View/SRH_2473.jpg',               alt: 'River View Cottage Bedroom',           category: 'River View' },
+  { src: '/client-media/reduced/River View/SRH_2480.jpg',               alt: 'River View Room Interior',             category: 'River View' },
   { src: '/client-media/reduced/RiverView Double/SRH_2527.jpg',         alt: 'Riverfront Cottage Bed & Decor',       category: 'River View' },
 
   // Rooms & Interiors
-  { src: '/client-media/reduced/General Photos/Mountain View.jpg',      alt: 'Mountain View Room Interior',          category: 'Rooms' },
-  { src: '/client-media/reduced/General Photos/Garden View.jpg',        alt: 'Garden View Cottage Room',             category: 'Rooms' },
-  { src: '/client-media/reduced/General Photos/Family Room.jpg',        alt: 'Spacious Family & Group Room',         category: 'Rooms' },
-  { src: '/client-media/reduced/Family Room/SRH_2541.jpg',              alt: 'Multi-Bed Group Suite',                category: 'Rooms' },
-  { src: '/client-media/reduced/Garden View/IMG-20250331-WA0135.jpg',   alt: 'Garden Cottage Verandah',              category: 'Rooms' },
+  { src: '/client-media/reduced/Family Room/SRH_2575.jpg',              alt: 'Spacious Family & Group Suite',        category: 'Rooms' },
+  { src: '/client-media/reduced/Family Room/SRH_2577.jpg',              alt: 'Family Room Multi-Bed Suite',          category: 'Rooms' },
+  { src: '/client-media/reduced/Family Room/SRH_2583.jpg',              alt: 'Family Room Lounge & Seating',         category: 'Rooms' },
   { src: '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0031.jpg', alt: 'Mountain Outlook from Room',    category: 'Rooms' },
+  { src: '/client-media/reduced/Garden View/IMG-20250331-WA0135.jpg',   alt: 'Garden Cottage Verandah',              category: 'Rooms' },
+  { src: '/client-media/reduced/River View/SRH_2494.jpg',               alt: 'Deluxe Room Bed & Amenities',          category: 'Rooms' },
 
   // Dining (Alphonso Restaurant)
   { src: '/client-media/reduced/General Photos/Alphonso Restaurant.jpg',alt: 'Alphonso Restaurant Dining Hall',      category: 'Dining' },

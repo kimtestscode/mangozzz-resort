@@ -23,7 +23,7 @@ export const officialRateChart = {
       badge: 'Scenic Riverfront',
       capacity: '2 Adults + 1 Child',
       size: '220 sq ft',
-      image: '/client-media/reduced/General Photos/River View.jpg',
+      image: '/client-media/reduced/River View/SRH_2473.jpg',
       features: ['Balcony with Direct River View', 'Air Conditioned', 'Ensuite Bathroom', 'Room Service 222/223'],
     },
     {
@@ -36,7 +36,7 @@ export const officialRateChart = {
       badge: 'Sahyadri Vista',
       capacity: '2 Adults + 1 Child',
       size: '240 sq ft',
-      image: '/client-media/reduced/General Photos/Mountain View.jpg',
+      image: '/client-media/reduced/Mountain View Rooms/IMG-20250912-WA0031.jpg',
       features: ['Serene Sahyadri Hill Views', 'Air Conditioned', 'Work Desk & Tea Table', 'Scenic Breeze'],
     },
     {
@@ -62,7 +62,7 @@ export const officialRateChart = {
       badge: 'Premium Wooden Villa',
       capacity: '2-4 Adults',
       size: '320 sq ft',
-      image: '/client-media/reduced/General Photos/Wood house big.jpg',
+      image: '/client-media/reduced/Woodhouse 1/IMG-20250331-WA0106.jpg',
       features: ['Handcrafted Teak Architecture', 'Private Forest Facing Deck', 'Luxury Wooden Interior', 'High Ceilings & AC'],
     },
     {
@@ -75,7 +75,7 @@ export const officialRateChart = {
       badge: 'Cozy Wood Cabin',
       capacity: '2 Adults + 1 Child',
       size: '260 sq ft',
-      image: '/client-media/reduced/General Photos/Both Wood House.jpg',
+      image: '/client-media/reduced/Woodhouse 2/WhatsApp Image 2025-06-10 at 13.10.38_977ba5b0.jpg',
       features: ['Authentic Natural Wood Frame', 'Private Balcony', 'Surrounded by Mango Trees', 'Peaceful Retreat'],
     },
     {
@@ -88,7 +88,7 @@ export const officialRateChart = {
       badge: 'Lush Orchard Setting',
       capacity: '2 Adults + 1 Child',
       size: '220 sq ft',
-      image: '/client-media/reduced/General Photos/Garden View.jpg',
+      image: '/client-media/reduced/Garden View/IMG-20250331-WA0135.jpg',
       features: ['Direct Orchard & Garden Access', 'Air Conditioned', 'Peaceful Greenery', 'Relaxation Verandah'],
     },
     {
@@ -101,7 +101,7 @@ export const officialRateChart = {
       badge: 'Best Value',
       capacity: '2 Adults + 1 Child',
       size: '220 sq ft',
-      image: '/client-media/reduced/General Photos/Pool View.jpg',
+      image: '/client-media/reduced/Pool View/IMG_7107-1024x682.jpg',
       features: ['Step-Out Pool Access', 'Air Conditioned', 'Poolside Sitting Verandah', 'Ensuite Bathroom'],
     },
     {
@@ -128,7 +128,7 @@ export const officialRateChart = {
       badge: 'Large Groups',
       capacity: '6 to 10+ Guests',
       size: '450 sq ft',
-      image: '/client-media/reduced/General Photos/Family Room.jpg',
+      image: '/client-media/reduced/Family Room/SRH_2575.jpg',
       features: ['Multiple Beds & Large Living Space', 'Attached Bathrooms', 'Best Group Economics', 'Call for Custom Pricing'],
     },
   ],
